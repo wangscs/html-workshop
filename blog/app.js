@@ -1,4 +1,4 @@
-/*
+/**
   Blogster
 
   Blogster is a vanilla blogging application. You can use it to start your own blog!
@@ -17,6 +17,10 @@ var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 
+// Database
+var sqlite = require('sqlite3').verbose();
+var db = new sqlite.Database('database');
+db.run('CREATE TABLE users (id INT, username TEXT, password TEXT, email TEXT');
 
 // ============================================
 // Create an instance of the Express web engine
@@ -59,13 +63,15 @@ app.get('/', function(req, res) {
 
 /* GET registration page. */
 app.get('/register', function(req, res) {
-  res.render('register', {})
+  res.render('register', {});
 });
 
 /* POST registration page. */
 app.post('/register', function(req, res) {
-  // res.json(req.body);
-  res.redirect(200, '/')
+    // res.json(req.body);
+    console.log("Body: %s" % req.body);
+    // var data = req.body['track'];
+    // res.redirect(200, '/');
 });
 
 /* Add a new page. */
