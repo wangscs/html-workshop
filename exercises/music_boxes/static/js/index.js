@@ -1,3 +1,4 @@
+// Create a variable to access the box elements
 var notes = document.getElementsByClassName("box");
 
 function playNote(e) {
@@ -5,6 +6,9 @@ function playNote(e) {
     note.currentTime = 0;
     note.play();
 }
+
+
+
 /*
 // Using JQuery
 $(document).ready( function() {
