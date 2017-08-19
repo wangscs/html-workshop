@@ -4,7 +4,6 @@
     <title>Coder</title>
     <meta charset="utf-8">
     <link href="static/css/index.css" media="screen" rel="stylesheet" type="text/css"/>
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="static/js/index.js"></script>
 </head>
 <body>
@@ -17,15 +16,23 @@
     </audio>
     <!--Add source tags for each mp3, ogg and wav files for x_notes below.-->
     <audio id="dAudio">
+        <source src="static/media/d_note.mp3" type="audio/mpeg"></source>
+        <source src="static/media/d_note.ogg" type="audio/ogg"></source>
+        <source src="static/media/d_note.wav" type="audio/wav"></source>
     </audio>
 
     <!--Add an audio tag for: eAudio and fAudio just like the above.-->
-    <audio id="">
+    <audio id="eAudio">
+        <source src="static/media/e_note.mp3" type="audio/mpeg"></source>
+        <source src="static/media/e_note.ogg" type="audio/ogg"></source>
+        <source src="static/media/e_note.wav" type="audio/wav"></source>
     </audio>
 
     <!--Fix this tag so that it has an id for fAudio and plays the notes.-->
-    <audio>
-
+    <audio id="fAudio">
+        <source src="static/media/f_note.mp3" type="audio/mpeg"></source>
+        <source src="static/media/f_note.ogg" type="audio/ogg"></source>
+        <source src="static/media/f_note.wav" type="audio/wav"></source>
     </audio>
 
     <audio id="gAudio">
@@ -53,7 +60,8 @@
         <div id= "f" class="box" onmousedown="playNote('f')"></div>
         <div id= "g" class="box" onmousedown="playNote('g')"></div>
         <!--Add keys here!-->
-
+        <div id= "a" class="box" onmousedown="playNote('a')"></div>
+        <div id= "b" class="box" onmousedown="playNote('b')"></div>
     </div>
 </body>
 </html>
