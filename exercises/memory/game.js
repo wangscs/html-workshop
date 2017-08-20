@@ -2,13 +2,7 @@ window.onload = function() {
 
     // FIXME: Set element variables for the following classes and ids:
     //   box, board, start, stop, message, rules and counter
-    var boxes = document.querySelectorAll(".box"),
-      board = document.querySelector(".board"),
-      startButton = document.querySelector("#start"),
-      stopButton = document.querySelector("#stop"),
-      notification = document.querySelector(".message"),
-      rules = document.querySelector("#rules"),
-      counter = document.querySelector("#counter");
+    //   Use the querySelectorAll method!
 
     // Set game variables
     var started = false,
@@ -21,8 +15,7 @@ window.onload = function() {
 
     // FIXME: Create 16 card tiles -- two of each value
     // CHALLENGE: How can we use images instead?
-    var tiles = ["a","b","c","d","e","f","g","h",
-                 "a","b","c","d","e","f","g","h"];
+    var tiles;
 
 
     stopButton.disabled = true;
@@ -36,14 +29,14 @@ window.onload = function() {
 
     function gameStart() {
         // FIXME: Check if the game is started
-        if (started == true) {
+        if () {
             // FIXME: Add dimStart class
-            startButton.classList.add('dimStart');
+            startButton.classList // YOUR CODE HERE;
             stopButton.classList.remove('dimStop');
             // FIXME: Enable startButton
-            startButton.disabled = true;
+
             // FIXME: Disable stopButton
-            stopButton.disabled = false;
+
         } else if (started == false) {
             startButton.classList.remove('dimStart');
             stopButton.classList.add('dimStop');
@@ -126,17 +119,12 @@ window.onload = function() {
     //      - Remove 'reveal' class from each card classList (2 cards)
     //      - Empty the cards list
     //      - Set value of noMatchTimeOut to null
-    function clearReveal() {
-        cards[0].classList.remove('reveal');
-        cards[1].classList.remove('reveal');
-        cards = [];
-        noMatchTimeOut = null;
-    }
+
 
     // Check to see if the game is over. Are all cards matched?
     function gameOver() {
         // FIXME: Set the right condition for ending the game
-        if (pairs == 8) {
+        if () {
           fancyText("YOU WON!","shake","fadeOut");
         }
     }
@@ -162,8 +150,7 @@ window.onload = function() {
           }
 
           if (started == true) {
-              // ...turn the card over
-            this.classList.add('reveal');  // ...trun card over
+            this.classList.add('reveal');  // ...turn card over
             cards.push(this);              // ...add to cards list
 
             if (cards.length == 2) {
