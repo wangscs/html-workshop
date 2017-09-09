@@ -1,9 +1,9 @@
 window.onload = function() {
-    var clearButton = document.getElementById('clear');
-    var results = document.querySelector(".result");
+    var errors = document.getElementById("#errors");
+    // Define variables named 'clearButton' and 'results' for clear and result elements.
 
     // Optional: Change the O's to Fros!
-    var fro = "<img src=\"../media/tictacfro2.png\">";
+    // Create an img element sourced from the fro image
 
     // Load Audio files
     var youMad = new Audio();
@@ -14,8 +14,7 @@ window.onload = function() {
     applause.src = "media/applause.mp3";
     applause.load();
 
-    // Gather all boxes into an array
-    var allBoxes = document.querySelectorAll(".box");
+    // Create a variable: Gather all boxes into an array
 
     // Create a very simplistic AI opponent
     var opponent = function() {
@@ -44,6 +43,7 @@ window.onload = function() {
             }
 
             // Check for win conditions
+            // Create a variable for each box element
             var b1 = document.querySelector("#b1").innerHTML,
                 b2 = document.querySelector("#b2").innerHTML,
                 b3 = document.querySelector("#b3").innerHTML,
@@ -54,31 +54,18 @@ window.onload = function() {
                 b8 = document.querySelector("#b8").innerHTML,
                 b9 = document.querySelector("#b9").innerHTML;
 
+            // Define the missing win conditions
             if (b1 === "X" && b2 === "X" && b3 === "X" ||
-                b1 === "X" && b4 === "X" && b7 === "X" ||
-                b1 === "X" && b5 === "X" && b9 === "X" ||
-                b1 === "X" && b4 === "X" && b7 === "X" ||
-                b4 === "X" && b5 === "X" && b6 === "X" ||
-                b7 === "X" && b8 === "X" && b9 === "X" ||
-                b7 === "X" && b5 === "X" && b3 === "X" ||
-                b2 === "X" && b5 === "X" && b8 === "X" ||
                 b3 === "X" && b6 === "X" && b9 === "X" ) {
-
-                results.innerHTML = "WE HAVE A WINNER!";
+                // Set the innerHTML of the results element to declare a winner!
                 applause.play();
 
             }
+            // Copy the win conditions from above but change the X to O
+            // OPTIONAL: If you imported the fro image, use that instead!
             if (b1 === "O" && b2 === "O" && b3 === "O" ||
-                b1 === "O" && b4 === "O" && b7 === "O" ||
-                b1 === "O" && b5 === "O" && b9 === "O" ||
-                b1 === "O" && b4 === "O" && b7 === "O" ||
-                b4 === "O" && b5 === "O" && b6 === "O" ||
-                b7 === "O" && b8 === "O" && b9 === "O" ||
-                b7 === "O" && b5 === "O" && b3 === "O" ||
-                b2 === "O" && b5 === "O" && b8 === "O" ||
                 b3 === "O" && b6 === "O" && b9 === "O" ) {
-
-                results.innerHTML = "YOU LOSE!";
+                // Set the innerHTML of the results element to declare a winner!
                 youMad.play();
             }
             opponent();
@@ -87,10 +74,17 @@ window.onload = function() {
     }
 
     // Clear the game board and start over
+    // Set the onclick property of clearButton to a function that puts an empty string in all boxes.
     clearButton.onclick = function() {
-        for (var i = 0; i < allBoxes.length; i++) {
-            allBoxes[i].innerHTML = "";
-            results.innerHTML = "";
+        try {
+            for (SET_VAR; SET_CONDITION; SET_INCREMENT) {
+                allBoxes[i].innerHTML;
+                results.innerHTML = "";
+            }
+        }
+        catch(err) {
+            errors.innerHTML = err.name + ": " + err.message;
+            console.error(err);
         }
     };
 };
