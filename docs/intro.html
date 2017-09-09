@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>
+        Welcome!
+    </title>
+    <style>
+        body {font-family: Arial;}
+        header {
+            text-align: center;
+            font-family: Arial;
+        }
+        h1 {
+            font-size: 90px;
+        }
+        #content {
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Let's Start!</h1>
+    <h3>Don't forget to save your work and refresh your browser!</h3>
+</header>
+<div id="content">
+    What's 2 + 2?
+    <input type="text" id="sum">
+    <input type="submit" onclick="checkAnswer()">
+    <div id="feedback"></div>
+</div>
+
+<script>
+    var sum = document.getElementById("sum");
+    var feedback = document.getElementById("feedback");
+
+    function checkAnswer() {
+        if (sum.value === "4") {
+            feedback.innerHTML = "Correct!";
+        } else {
+            feedback.innerHTML = "Try again!";
+        }
+    }
+</script>
+</body>
+</html>
