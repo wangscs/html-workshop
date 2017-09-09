@@ -1,4 +1,4 @@
-$(document).ready( function() {
+window.onload = function() {
 
     // With this function we will assemble our clock, 
     // calling up whole date and then hours, minutes, 
@@ -55,4 +55,4 @@ $(document).ready( function() {
     // running the displayTime function every second.
     setInterval(displayTime, 1000);
 
-});
+};
