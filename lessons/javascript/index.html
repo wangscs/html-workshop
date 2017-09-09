@@ -10,16 +10,16 @@
 
 <h1 id="title">Music Land</h1>
 <p id="content">We have the best music selection ever!</p>
-<button name="clickme">Click Me</button>
+<!-- CHALLENGE: Duplicate the button. How do you select all buttons?-->
 <button name="clickme">Click Me</button>
 
 <script>
+	// Create variables for content and button
 	var title = document.getElementById('title');
-	var content = document.getElementById('content');
-	var button = document.getElementsByName('clickme');
 
 	function changeTitle(newTitle) {
-	    title.innerHTML = newTitle;
+	    // Set the .innerHTML attribute on title to newTitle
+	    title.innerHTML =
 	}
 
 	var ask = confirm('Do you want to change the title?');
