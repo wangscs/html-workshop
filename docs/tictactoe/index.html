@@ -1,0 +1,47 @@
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/alt.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script type="text/javascript" src="js/game.js"></script>
+	<title>Tic-Tac-Toe</title>
+</head>
+<body>
+	<!--Display title and game status-->
+	<div class="header">
+		<h1 class="animated bounceInDown">TIC TAC TOE</h1>
+		<h3 class="animated pulse">Go ahead. See if you can Win!</h3>
+		<h2 class="animated zoomIn result"></h2>
+	</div>
+<div class="content">
+	<!--Decoration (or score board ...)-->
+	<div class="side animated infinite pulse" id="left">X<p id="scorex"></p></div>
+	<div class="side animated infinite pulse" id="right">O<p id="scoreo"></p></div>
+
+	<!--Game Board-->
+	<table class="board animated shake">
+		<tr class="row">
+			<td class="box" id="b1"></td>
+			<td class="box" id="b2"></td>
+			<td class="box" id="b3"></td>
+		</tr>
+		<tr class="row">
+			<td class="box" id="b4"></td>
+			<td class="box" id="b5"></td>
+			<td class="box" id="b6"></td>
+		</tr>
+		<tr class="row">
+			<td class="box" id="b7"></td>
+			<td class="box" id="b8"></td>
+			<td class="box" id="b9"></td>
+		</tr>
+	</table>
+
+	<!--Buttons to update the board-->
+	<div class="dash">
+		<button id="endturn">Mode</button>
+		<button id="clear">Clear</button>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Title</title>
+</head>
+<body>
+
+<div id= "orb" class= "sun" onclick="day()">
+    <div id= "moonspot1"></div>
+    <div id= "moonspot2"></div>
+    <div id= "moonspot3"></div>
+</div>
+<div id= "sky" class= "day"></div>
+
+<script>
+    var orb = document.getElementById("orb");
+    var sky = document.getElementById("sky");
+
+    // Create variables for the spot elements
+    var spot1;
+    var spot2;
+    var spot3;
+    var spots = [spot1, spot2, spot3];
+
+    function day(){
+        if (orb.className == "sun") {
+            // ...change the orb class name to moon
+            // ...then change the sky class name to night
+            for (var i = 0; i < spots.length; i++) {
+                spots[i].className = "visible";
+            }
+        } else {
+            // ...change the orb class name to sun
+            // ...and chang ethe sky class name to day
+            for (var i = 0; i < spots.length; i++) {
+                spots[i].className = "";
+            }
+        }
+    }
+</script>
+</body>
+</html>
