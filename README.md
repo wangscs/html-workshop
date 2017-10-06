@@ -1,44 +1,10 @@
-# Javascript Practice
+# Code Workshops
 
-### First Steps
-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+This repository contains exercises for learning frontend web development. That includes HTML, CSS and Javascript.
+- master branch: Complete code and solutions for all projects for all workshops
+- student branch: Incomplete code that students can use for learning.
 
-### JS References
-- Built-in Objects: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+To view a demo of each of the current projects visit:
+https://code-workshops.github.io/workshops/index.html
 
-### Node CLI
-Reference: https://nodejs.org/api/cli.html
-
-```
-mkdir code
-cd code
-git clone https://github.com/GA-Apprentice-Workshop/workshops.git
-```
-Common elements of webpages:
-- Navigation
-- Search form
-- Login/registration form
-- Gallery (https://www.w3schools.com/howto/howto_js_lightbox.asp)
-- List of links
-
-Common operations:
-
-```
-document.querySelectorAll()
-document.getElementById()
-
-element.innerHTML
-element.className
-element.style.display
-```
-
-References:
-- https://www.w3schools.com/jsref/met_document_createelement.asp
-
-# Projects
-
-### Task #1: Update the title on the wepage.
-1. Go to workshop folder
-2. Open Sublime
-3. Create 1 file: practice.html
+__NOTE: The demos are hosted on github.io so some features will not look/work as intended. You can download any of the projects and open then locally in your browser.__
