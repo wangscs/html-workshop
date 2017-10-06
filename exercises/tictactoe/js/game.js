@@ -3,7 +3,7 @@ window.onload = function() {
     var results = document.querySelector(".result");
 
     // Optional: Change the O's to Fros!
-    var fro = "<img src=\"../media/tictacfro2.png\">";
+    var fro = "<img src='media/tictacfro2.png'>";
 
     // Load Audio files
     var youMad = new Audio();
@@ -26,7 +26,7 @@ window.onload = function() {
         setTimeout(function() {
 
             if (!allBoxes[o].innerHTML) {
-                allBoxes[o].innerHTML = "O";
+                allBoxes[o].innerHTML = fro;
                 allBoxes[o].style.color = "#ffdb00";
             } else {
                 // Recursion... start over again
@@ -68,20 +68,22 @@ window.onload = function() {
                 applause.play();
 
             }
-            if (b1 === "O" && b2 === "O" && b3 === "O" ||
-                b1 === "O" && b4 === "O" && b7 === "O" ||
-                b1 === "O" && b5 === "O" && b9 === "O" ||
-                b1 === "O" && b4 === "O" && b7 === "O" ||
-                b4 === "O" && b5 === "O" && b6 === "O" ||
-                b7 === "O" && b8 === "O" && b9 === "O" ||
-                b7 === "O" && b5 === "O" && b3 === "O" ||
-                b2 === "O" && b5 === "O" && b8 === "O" ||
-                b3 === "O" && b6 === "O" && b9 === "O" ) {
+
+            opponent();
+            if (b1 === fro && b2 === fro && b3 === fro ||
+                b1 === fro && b4 === fro && b7 === fro ||
+                b1 === fro && b5 === fro && b9 === fro ||
+                b1 === fro && b4 === fro && b7 === fro ||
+                b4 === fro && b5 === fro && b6 === fro ||
+                b7 === fro && b8 === fro && b9 === fro ||
+                b7 === fro && b5 === fro && b3 === fro ||
+                b2 === fro && b5 === fro && b8 === fro ||
+                b3 === fro && b6 === fro && b9 === fro ) {
 
                 results.innerHTML = "YOU LOSE!";
                 youMad.play();
             }
-            opponent();
+            // opponent();
 
         };
     }
