@@ -14,15 +14,13 @@
 <button name="clickme">Click Me</button>
 
 <script>
-	var title = document.getElementById('title');
-	var content = document.getElementById('content');
-	var button = document.getElementsByName('clickme');
+	// Create variables for the title, content and button elements
 
 	function changeTitle(newTitle) {
-	    title.innerHTML = newTitle;
+	    // change the title text to newTitle
 	}
 
-//	var ask = confirm('Do you want to change the title?');
+	var ask = confirm('Do you want to change the title?');
 
 	if (ask) {
 	    changeTitle('Land of Music');
