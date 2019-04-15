@@ -64,38 +64,17 @@
      **/
 
     function addSong() {
-        var song = document.getElementsByName('song')[0];
-        var dur = document.getElementsByName('duration')[0];
-        buildTable([song.value, dur.value, 'Play']);
-        // clear the text boxes after building the row
-        song.value = '';
-        dur.value = '';
+        // this function should add a song to the list
     }
 
     function createRow(content) {
-        // Content should be an array containing row data values
-        var tr = document.createElement('tr');
-        var a = document.createElement('a');
-        a.setAttribute('href', '#');
-
-        content.forEach(function(elem) {
-            var td = document.createElement('td');
-            if (elem == 'Play') {
-                a.innerHTML = elem;
-                td.appendChild(a);
-                tr.appendChild(td)
-            } else {
-                td.innerHTML = elem;
-                tr.appendChild(td);
-            }
-        });
-        return tr
+        // Create new elements to add content to the table row
+        // return the new row
+        
     }
 
     function buildTable(entry) {
-        var table = document.getElementById('playlist');
-        var row = createRow(entry);
-        table.appendChild(row);
+        // this function should add a row to the playlist table
     }
 </script>
 </body>
