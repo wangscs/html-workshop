@@ -1,8 +1,7 @@
-// Create a variable to access the box elements
-var notes = document.getElementsByClassName("box");
-
-function playNote(e) {
-    var note = document.getElementById(e+"Audio");
-    note.currentTime = 0;
-    note.play();
-}
+/**
+ * Rainbow Piano
+ *
+ * Use HTML, CSS and JS to create a simple piano with 7 notes. Each key should be
+ * a different color and all keys should have a hover effect. Clickin ga key on the piano
+ * should play a note.
+ */
