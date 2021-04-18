@@ -7,64 +7,66 @@ body {
 	margin: auto;
 }
 
-table {
-	border: 1px solid black;
-}
-
 h1 {
-	/*Set font-size to 75px*/
-	/*Set font-family to Sigmar One, cursive*/
-	/*Set text-align to center*/
-	/*Set the font color to #99ce05*/
-	/*Set bottom border to 5px solid black*/
-	/*Set the bottom margin to 10px*/
-	/*Set padding to 20px*/
+	font-size: 75px;
+	font-family: 'Sigmar One', cursive;
+	text-align: center;
+	color: #99ce05;
 	text-shadow: 5px 5px 8px #000;
 	background: linear-gradient(#666,#333);
 	background: -webkit-linear-gradient(#666,#333);
 	background: -moz-linear-gradient(#666,#333);
 	background: -o-linear-gradient(#666,#333);
+	border-bottom: 5px solid #000;
 	box-shadow: 5px 5px 5px #000;
+	margin-bottom: 10px;
+	padding: 20px;
 }
 
 h2 {
-	/*Set text alignment to center*/
-	/*Set text color to white*/
-	/*Set font size to 30px */
-	/*Set padding to 0*/
-	/*Set height to 40px */
-	/*Set margin to 40 px*/
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
 	font-family: 'Sigmar One', cursive;
+	padding: 0;
+	margin: 20px;
+	height: 40px;
 }
 
 h3 {
-	/*Create a custom style!*/
+	text-align: center;
+	font-family: 'Sigmar One', cursive;
+	color: #ffdb00;
+	margin: auto;
+	margin-bottom: 20px;
 }
 
 .header {
-	/*Set margin to auto*/
+	margin: auto;
 }
 
 .content {
-	/*Set position to relative*/
-	width: 310px;
-
+	position: relative;
 }
 
 .board {
-	/*Set position to relative*/
-	/*Customize margin, background and width to your liking!*/
-	border: 1px solid black;
-}
-
-.row {
-	border: 1px solid black;
+	position: relative;
+	margin: auto;
+	background: #333;
+	width: 310px;
 }
 
 .box {
-	/*Customize the style for the boxes!*/
-	/*Set the box dimensions, background, font and borders!*/
-	border: 1px solid black;
+	background: #666;
+	width: 90px;
+	height: 90px;
+	font-size: 60px;
+	font-family: 'Sigmar One', cursive;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	border: 5px solid #333;
+	padding: 0;
 }
 
 .dash {
@@ -72,22 +74,20 @@ h3 {
 	margin: auto;
 	position: relative;
 	padding: 15px;
+	display: flex;
 }
 
 button {
-	/*Design a gradient for background*/
-	/*Dont forget to set for webkit, moz and opera too!*/
-	/*Customize the style!*/
+	background: linear-gradient(#ffcc02,#ff9c00);
+	background: -webkit-linear-gradient(#ffcc02,#ff9c00);
+	background: -moz-gradient(#ffcc02,#ff9c00);
+	background: -o-linear-gradient(#ffcc02,#ff9c00);
+	border: 2px solid #666;
+	color: white;
+	font-size: 30px;
+	font-family: 'Sigmar One', cursive;
 	width: 150px;
 	height: 50px;
-}
-
-#endturn {
-	/*Set a different background for this button*/
-}
-
-#clear {
-	/*Add any customization you like!*/
 }
 
 .side {
