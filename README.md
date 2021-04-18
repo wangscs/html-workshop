@@ -7,9 +7,6 @@
 ### JS References
 - Built-in Objects: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
-### Node CLI
-Reference: https://nodejs.org/api/cli.html
-
 ```
 mkdir code
 cd code
