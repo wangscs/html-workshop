@@ -32,12 +32,16 @@
 
     <div id="music">
         <!--Add a table of tracks with name, duration and play button-->
-        <input type="text" name="song">
-        <input type="text" name="duration">
+        <label>
+            <input type="text" name="song">
+        </label>
+        <label>
+            <input type="text" name="duration">
+        </label>
         <a href="#" class="btn" onclick="addSong()">Play</a>
 
         <table id="playlist">
-            <th>Music Playlist</th>
+            <tr><th>Music Playlist</th></tr>
             <!--Add 1 table row element-->
             <!--Inside the row, add 3 columns: Title, Duration and Listen.-->
         </table>
@@ -49,32 +53,42 @@
     Music Mecca by Programming One 2017
 </footer>
 
-<!-- Import custom Javascript files -->
-<script src="scripts/practice.js"></script>
-
-<!--Add some custom scripts-->
 <script>
-    /**
-     * Examples:
-     *
-     * var i = document.createElement("input");
-     * i.type = "text";
-     * i.name = "user_name";
-     * i.id = "user_name1";
-     **/
 
     function addSong() {
-        // this function should add a song to the list
+        let song = document.getElementsByName('song')[0];
+        let dur = document.getElementsByName('duration')[0];
+        if (song.value && dur.value) {
+            updateTable([song.value, dur.value, 'Play']);
+            song.value = '';
+            dur.value = '';
+        }
     }
 
     function createRow(content) {
-        // Create new elements to add content to the table row
-        // return the new row
-        
+        // Content should be an array containing row data values
+        let tr = document.createElement('tr');
+        let a = document.createElement('a');
+        a.setAttribute('href', '#');
+
+        content.forEach((elem)=> {
+            let td = document.createElement('td');
+            if (elem === 'Play') {
+                a.innerHTML = elem;
+                td.appendChild(a);
+                tr.appendChild(td)
+            } else {
+                td.innerHTML = elem;
+                tr.appendChild(td);
+            }
+        });
+        return tr
     }
 
-    function buildTable(entry) {
-        // this function should add a row to the playlist table
+    function updateTable(entry) {
+        let table = document.getElementById('playlist');
+        let row = createRow(entry);
+        table.appendChild(row);
     }
 </script>
 </body>
