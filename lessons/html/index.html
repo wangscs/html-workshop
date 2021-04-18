@@ -2,77 +2,84 @@
 <head>
     <!--Update the title to say Recipe Book.-->
     <title>Recipe Book</title>
-    <link rel="stylesheet" href="styles/html.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+<div class="content">
 
-<!--Wrap heading and img in an h1 element. Set img value to smiley02.png.-->
-    <img src="" alt="Broken smiley!" id="smile" />
-<p>View Credits Below</p>
+    <!--Wrap heading and img in an h1 element. Set img value to smiley02.png.-->
+    <h1>My Recipes
+        <img src="images/smiley02.png" alt="Broken smiley!" id="smile" />
+    </h1>
+    <p>View Credits Below</p>
 
-<!--Add image for recipe-book from the images folder.-->
-<!--Save and refresh browser.-->
+    <!--Add image for recipe-book from the images folder.-->
+    <!--Save and refresh browser.-->
+    <img src="images/recipe-book.jpg" alt="Broken recipe!" />
 
-<!--Add a hyperlink to smiley03 using it's name.-->
-<!--Save and refresh browser.-->
+    <!--Wrap in a paragraph element.-->
+    <p>
+        Intelligentsia mumblecore whatever, pork belly master cleanse +1 3 wolf moon VHS before they sold out ramps twee try-hard cred. Bitters intelligentsia disrupt listicle. Irony aesthetic snackwave, fashion axe twee tacos paleo leggings ethical put a bird on it iPhone meditation edison bulb taxidermy. Hella fam brunch PBR&B.
+    </p>
+    <!--Wrap in an h2 element.-->
+    <h2 class="recipe">How to Make Cookies</h2>
 
-<!--Wrap in a paragraph element.-->
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac ipsum euismod, ullamcorper nisl sit amet, placerat diam. Duis elementum non tellus nec consequat. Mauris tristique mattis diam, a bibendum leo vestibulum porttitor. Maecenas sit amet elit tristique, tempus ante at, volutpat diam. Nunc porta eros sed gravida venenatis. Pellentesque dignissim convallis est, a accumsan odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis bibendum, metus in hendrerit mattis, nibh eros lacinia nunc, non efficitur orci metus id orci.
+    <!--Add image for cookies.jpg.-->
+    <img src="images/cookies.png" alt="">
 
-<!--Wrap in an h2 element.-->
-How to Make Cookies
+    <!--Fix the code below to make an unordered list.-->
+    <!--For each item in the list, make the numbers bolded.-->
+    <h3>Ingredients:</h3>
+    <ul class="ingredients">
+        <li><b>1</b> cup of flour</li>
+        <li><b>2</b> cups of sugar</li>
+        <li><b>1</b> <abbr title="teaspoon">tsp</abbr> of vanilla</li>
+        <li><b>1/2</b> cup of chocolate chips</li>
+        <li><b>8</b> <abbr title="tablespoons">tbsp of butter</abbr></li>
+    </ul>
 
-<!--Add image for cookies.jpg.-->
+    <p>
+        I'm baby literally venmo bushwick, craft beer hot chicken hashtag typewriter readymade letterpress coloring book retro messenger bag yr intelligentsia hammock. Forage hashtag aesthetic cray, succulents bitters 3 wolf moon pop-up tousled twee disrupt pitchfork health goth. Bushwick schlitz affogato, single-origin coffee hoodie glossier venmo. Cornhole cloud bread 3 wolf moon, bicycle rights unicorn post-ironic kickstarter semiotics air plant.
+    </p>
 
-<!--Fix the code below to make an unordered list.-->
-<!--For each item in the list, make the numbers bolded.-->
-<h3>Ingredients:</h3>
-<ul>
-    <li>1 cup of flour
-    2 cups of sugar</li>
-    <li>1 tsp of vanilla
-    1/2 cup of chocolate chips
-    8 tbsp of butter</li>
-</ul>
+    <!--Add a horizontal rule.-->
+    <hr />
 
-<p>
-    Duis porta erat id felis maximus convallis. Vivamus mi mauris, malesuada ac scelerisque iaculis, ornare eu justo. Nullam ultrices nisi id nulla malesuada, ac pretium leo dictum. Integer vel elit neque. Vestibulum erat tortor, tristique in tincidunt et, tempus at lacus. Sed gravida venenatis quam ut fermentum. Phasellus lobortis eu nisl id consectetur. Etiam vel massa gravida, imperdiet lacus quis, pretium libero.
-</p>
+    <!--Wrap in h2 element.-->
+    <h2 class="recipe">How to Make Cake</h2>
 
-<!--Add a horizontal rule.-->
+    <!--Add a div element. Inside of it, add cake image.-->
+    <!--Save and refresh browser.-->
+    <div>
+        <img src="images/cake.jpg" alt="Cake missing!">
+    </div>
 
-<!--Wrap in h2 element.-->
-How to Make Cake
+    <h3>Ingredients:</h3>
+    <!--Fix the ingredients into an unordered list.-->
+    <ul class="ingredients">
+        <li><b>2</b> cups of sugar</li>
+        <li><b>4</b> cups of flour</li>
+        <li><b>1</b> cup lemon juice</li>
+        <li><b>2</b> eggs</li>
+        <li><b>1</b> cup of milk</li>
+        <li><b>1</b> tsp salt</li>
+    </ul>
 
-<!--Add a div element. Inside of it, add cake image.-->
-<!--Save and refresh browser.-->
+    <p>
+        Messenger bag farm-to-table plaid, aesthetic roof party taxidermy literally gochujang kitsch next level kickstarter shaman. Man bun bitters kogi, meditation literally paleo snackwave bushwick fixie before they sold out humblebrag. Cray biodiesel flannel, church-key snackwave iceland artisan echo park. Forage gochujang copper mug ethical hashtag paleo lo-fi affogato portland snackwave air plant. Waistcoat yuccie direct trade, dreamcatcher slow-carb whatever cliche mustache VHS.
+    </p>
 
-<h3>Ingredients:</h3>
-<!--Fix the ingredients into an unordered list.-->
-<ul>
-    2 cups of sugar
-    <li>4 cups of flour
-    <li>1 cup lemon juice
-    2 eggs
-    1 cup of milk
-    1 tsp salt</li>
-</ul>
+    <!--CHALLENGE: Attributes and Text Formatting -->
+    <!--1. Use an <a> tag to link the last recipe on the page. The link should be at the top of the page.
+        2. Use an <abbr> tag in the ingredients where you see tsp/tbsp. Give
+            it a title attribute with the value as the full name.
+        3. Add 5px borders to all img tags.
+    -->
+    <!--END CHALLENGE -->
 
-<p>
-    Duis porta erat id felis maximus convallis. Vivamus mi mauris, malesuada ac scelerisque iaculis, ornare eu justo. Nullam ultrices nisi id nulla malesuada, ac pretium leo dictum. Integer vel elit neque. Vestibulum erat tortor, tristique in tincidunt et, tempus at lacus. Sed gravida venenatis quam ut fermentum. Phasellus lobortis eu nisl id consectetur. Etiam vel massa gravida, imperdiet lacus quis, pretium libero.
-</p>
-
-<!--CHALLENGE: Attributes and Text Formatting -->
-<!--1. Use an <a> tag to link from the top of the page to the footer
-        section on this page.
-    2. Use an <abbr> tag in the ingredients where you see tsp/tbsp. Give
-        it a title attribute with the value as the full name.
-    3. Add 5px borders to all img tags.
--->
-<!--END CHALLENGE -->
-
-<footer name="foot">
-    Programming for Non-programmers | My Recipes, 2017
-</footer>
+    <footer>
+        Programming for Non-programmers | My Recipes, 2017
+    </footer>
+</div>
 </body>
 </html>

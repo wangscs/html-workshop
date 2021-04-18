@@ -12,8 +12,17 @@ body {
     /* Set font family to be Helvetica */
     /* Set padding to 50px */
     font-size: 16px;
-    font-family: Helvetica;
+    font-family: Helvetica, serif;
     padding: 50px;
+}
+
+.content {
+    /* Set maximum width to be 800 pixels */
+    /* Set margin to be automatically calculated on all sides */
+    /* Set padding to be 0 pixels top & bottom, and 20 pixels left & right */
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px 0 20px;
 }
 
 h1 {
