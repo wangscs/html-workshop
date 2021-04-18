@@ -1,5 +1,12 @@
 # Javascript Practice
 
+## Instructions
+
+Instructor will provide classroom instructions for each exercise. However, here are some important notes to keep in mind about each:
+
+- Gallery: You need to implement at least 3 images.
+
+
 ### First Steps
 - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
@@ -30,12 +37,3 @@ element.className
 element.style.display
 ```
 
-References:
-- https://www.w3schools.com/jsref/met_document_createelement.asp
-
-# Projects
-
-### Task #1: Update the title on the wepage.
-1. Go to workshop folder
-2. Open Sublime
-3. Create 1 file: practice.html
