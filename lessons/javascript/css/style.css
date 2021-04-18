@@ -1,9 +1,6 @@
-/* Every time you make a change to this file, refresh your browser */
-/* and see if you can notice the changes! */
-
 body {
   margin: auto;
-  font-family: 'Helvetica';
+  font-family: 'Helvetica', serif;
   line-height: 1.5;
 }
 
@@ -14,18 +11,7 @@ header {
 nav {
   width: 200px;
   height:400px;
-}
-
-.sidebar {
-  /* Set to float on the left side of the page */
-  /* Set background color */
-  /* Set text color */
-}
-
-.content {
-  float: left;
   margin: auto;
-  padding: 20px;
 }
 
 h1 {
@@ -42,16 +28,50 @@ footer {
   color: white;
 }
 
-.btn {
-  /*Tweak the button so that the color scheme and size look nice!*/
-  background-color: orangered;
-  border:3px solid black;
-  border-radius: 8px;
-  width: 200px;
-  display: inline-block;
-  padding: 5px;
+a {
+  color: white;
+  text-decoration: none;
 }
 
 a.btn {
   text-decoration: none;
+}
+
+td a {
+  color: #2e6da4;
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px 0 20px;
+}
+
+.sidebar {
+  float: left;
+  background-color: #31b0d5;
+  color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#songForm {
+  padding: 10px;
+  margin-left: 220px;
+}
+
+#songList {
+  list-style: none;
+}
+
+.btn {
+  /*Tweak the button so that the color scheme and size look nice!*/
+  background-color: orangered;
+  border:3px solid #ce8483;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  width: 200px;
+  display: inline-block;
+  padding: 5px;
 }

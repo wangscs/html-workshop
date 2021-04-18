@@ -5,38 +5,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<!-- Add a title header for your first music site -->
-<header>
-    <h1>Music Mecca</h1>
-    <!-- Add a paragraph that describes what you do -->
-    <div class="desc">
-        <h3>More music than you can hear</h3>
-    </div>
-</header>
-
-<!-- Navigation Sidebar-->
-<nav class="sidebar">
-    <ul>
-        <li>Song List</li>
-        <li>Artist List</li>
-        <li>My Profile</li>
-    </ul>
-</nav>
-
 <div class="content">
-    <div id="article">
-        <!--Add content here using Javascript-->
-        Add a song
-    </div>
+<!-- Add a title header for your first music site -->
+    <header>
+        <h1>Music Mecca</h1>
+        <!-- Add a paragraph that describes what you do -->
+        <div class="desc">
+            <h3>More music than you can hear</h3>
+        </div>
+    </header>
 
-    <div id="music">
+    <!-- Navigation Sidebar-->
+    <nav class="sidebar">
+        <ul id="songList">
+            <li><a href="#">All Songs</a></li>
+            <li><a href="#">Artists</a></li>
+            <li><a href="#">My Profile</a></li>
+        </ul>
+    </nav>
+
+    <div id="songForm">
+        <div>
+            <!--Add content here using Javascript-->
+            <h3>Add a song</h3>
+            <p>Add any song you like to your custom playlist below!</p>
+        </div>
         <!--Add a table of tracks with name, duration and play button-->
         <label>
-            <input type="text" name="song">
+            <input type="text" name="song" placeholder="Song Title">
         </label>
         <label>
-            <input type="text" name="duration">
+            <input type="text" name="duration" placeholder="Duration, ex. 3:21">
         </label>
         <a href="#" class="btn" onclick="addSong()">Play</a>
 

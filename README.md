@@ -34,6 +34,7 @@ document.getElementById()
 
 element.innerHTML
 element.className
+element.appendChild
 element.style.display
 ```
 
