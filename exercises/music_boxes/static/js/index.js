@@ -17,31 +17,31 @@ window.onload=function(){
 
 function makeSound(key){
   switch(key){
-    case "Key1":
+    case "A":
       let audio1 = new Audio("/exercises/music_boxes/static/media/a_note.mp3");
       audio1.play();
       break;
-    case "Key2":
+    case "B":
       let audio2 = new Audio("/exercises/music_boxes/static/media/b_note.mp3");
       audio2.play();
       break;
-    case "Key3":
+    case "C":
       let audio3 = new Audio("/exercises/music_boxes/static/media/c_note.mp3");
       audio3.play();
       break;
-    case "Key4":
+    case "D":
       let audio4 = new Audio("/exercises/music_boxes/static/media/d_note.mp3");
       audio4.play();
       break;
-    case "Key5":
+    case "E":
       let audio5 = new Audio("/exercises/music_boxes/static/media/e_note.mp3");
       audio5.play();
       break;
-    case "Key6":
+    case "F":
       let audio6 = new Audio("/exercises/music_boxes/static/media/f_note.mp3");
       audio6.play();
       break;
-    case "Key7":
+    case "G":
       let audio7 = new Audio("/exercises/music_boxes/static/media/g_note.mp3");
       audio7.play();
       break;  

@@ -2,7 +2,53 @@ body {
     background-color: black;
 }
 
+h1 {
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}
 
-.keys{
-    
+.piano {
+    text-align: center;
+}
+
+.keys {
+    border-radius: 10px;
+    padding-top: 350px;
+    min-width: 60px;
+    min-height: 400px;
+    text-align: bottom;
+    outline: none;
+}
+
+.keys:hover{
+    opacity: 90%;
+}
+
+#key3 {
+    background-color: #ff6961;
+}
+
+#key4 {
+    background-color: #ffb347;
+}
+
+#key5 {
+    background-color: #fdfd96;
+}
+
+#key6 {
+    background-color: #77dd77;
+}
+
+#key7 {
+    background-color: #aec6cf;
+}
+
+#key1 {
+    background-color: #543E7A;
+}
+
+#key2 {
+    background-color: #cb99c9;
 }
