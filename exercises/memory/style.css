@@ -56,6 +56,7 @@ body {
 .row {
 	margin: auto;
 	padding: 5px;
+	display: block;
 	width: 340px;
 	height: 75px;
 }
@@ -132,12 +133,12 @@ button {
 }
 
 .noselect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 /* Experiments and Testing ---------------------------*/
@@ -149,6 +150,7 @@ button {
 
 .cover {
 	background: #000;
+	position: relative;
 	display: ;
 	width: 70px;
 	height: 70px;
